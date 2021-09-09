@@ -10,8 +10,6 @@ bot = commands.Bot(command_prefix=prefixes, intents=discord.Intents.all())
 slash = SlashCommand(bot, sync_commands=True, override_type=True)
 @bot.event
 async def on_ready():
-    channel = bot.get_channel(881990844226367531)
-    await channel.send('i am online')
     await bot.change_presence(activity=discord.Streaming(name='put status here', url='https://www.youtube.com/watch?v=dQw4w9WgXcQ'))
     print('Connected to bot: {}'.format(bot.user.name))
     print('Bot ID: {}'.format(bot.user.id))
