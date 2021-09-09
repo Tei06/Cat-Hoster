@@ -1,1 +1,2 @@
-# Cat-Hoster
+# discordCat
+discordCat bot
